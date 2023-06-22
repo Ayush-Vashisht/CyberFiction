@@ -440,3 +440,21 @@ function locomotive() {
       scroller:`#main`
     }
   })
+  gsap.to("#page4",{
+    scrollTrigger:{
+      trigger:`#page4`,
+      start:`top top`,
+      end:`bottom top`,
+      pin:true,
+      scroller:`#main`
+    }
+  })
+  gsap.to("#page5",{
+    scrollTrigger:{
+      trigger:`#page5`,
+      start:`top top`,
+      end:`bottom top`,
+      pin:true,
+      scroller:`#main`
+    }
+  })

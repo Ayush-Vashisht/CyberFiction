@@ -28,14 +28,27 @@ html,body{
     position:relative;
     height:100vh;
     width:100vw;
-    background-color:rgb(255, 0, 0)
+    background-color:#f1f1f1;
     
 }
 #main #page3{
     position:relative;
     height:100vh;
     width:100vw;
-    background-color:rgb(0, 255, 136)
+    background-color:#f1f1f1;
+}
+#main #page4{
+    position:relative;
+    height:100vh;
+    width:100vw;
+    background-color:#f1f1f1;
+}
+
+#main #page5{
+    position:relative;
+    height:100vh;
+    width:100vw;
+    background-color:rgb(255, 98, 0)
 }
 #nav{
     height:7%;
@@ -44,7 +57,7 @@ html,body{
     position:fixed;
     align-items: center;
     justify-content: space-between;
-    z-index:97;
+    z-index:96;
     padding:0px 15px;
 }
 #nav>h3{
@@ -67,7 +80,7 @@ html,body{
     width:100%;
     height:25%;
     font-size: 100px;
-    z-index:98;
+    z-index:97;
 }
 #loop>h1{
     font-weight:400;
@@ -95,6 +108,7 @@ html,body{
     top:68%;
     left:30%;
     font-size:9px;
+    overflow: hidden;
 }
 @keyframes anim{
     0%{
@@ -107,8 +121,9 @@ html,body{
 canvas{
     max-height: 100vh;
     max-width: 100vw;
-    position: relative;
-    z-index:99;
+    /* position: relative; */
+    position: fixed;
+    z-index:98;
 }
 #page1>#right-text{
     position:absolute;
@@ -138,4 +153,109 @@ canvas{
 #page1>#left-text>p{
     font-weight: 400;
     color: #7c7c7c;
+}
+#page2>#left-text{
+    position: absolute;
+    top:35%;
+    left:5%;
+}
+
+#page2>#left-text>h2{
+    font-size:40px; 
+    line-height: 1.3;
+}
+#page2>#left-text>p{
+    font-size:9px;
+    font-weight:400;
+    margin-bottom: 5px;
+    color:#636262;
+}
+#page2>#right-text{
+    width:38%;
+    position: absolute;
+    top:53%;
+    right:2%;
+    text-align:end;
+}
+#page2>#right-text>p{
+    color:#636262;
+    font-size:12px;
+    line-height: 1.3;
+}
+#page3>#left-text{
+    position:absolute;
+    width:35%;
+    top:28%;
+    left:5%;
+}
+#page3>#left-text>p{
+    color:#636262;
+    font-size:11px;
+    font-weight:400;
+}
+#page3>#right-text{
+    position:absolute;
+    top:50%;
+    right:5%;
+    text-align: end;
+}
+#page3>#right-text>h2{
+    font-size: 40px;
+    line-height: 1.3;
+}
+#page3>#right-text>p{
+    font-size:10px;
+    font-weight:400;
+    color:#636262;
+    margin-bottom:5px;
+}
+#page4>#text{
+    
+    display: flex;
+    position:absolute;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align:center;
+    padding-top: 5rem;
+}
+#page4>#text>h5{
+    font-size: 12px;;
+    margin: 0.7rem 0;
+    font-weight: 400;
+    color:#636262;
+}
+#page4>#text>h2{
+    font-size: 50px;
+    margin:0.7rem 
+}
+#page4>#text>p{
+   width:48%;
+   font-weight:400;
+   color:#636262;
+}
+#page4>#avatar{
+    display: flex;
+    position:relative;
+    white-space: nowrap;
+    padding-top: 10rem;
+    
+    top:20%;
+    animation-name: avataranim ;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#page4>#avatar>span>img{
+    max-width:450px;
+    margin: 0 -70px -60px;
+}
+
+@keyframes avataranim {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
 }
